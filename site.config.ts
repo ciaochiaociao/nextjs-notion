@@ -3,7 +3,6 @@ import { siteConfig } from './lib/site-config'
 export default siteConfig({
   // the site's root Notion page (required)
   rootNotionPageId: 'ecbb470232834a82837eaf3427b7bb23',
-  // https://www.notion.so/chiao-wei-hsu/My-Second-Brain-2edcdb621ee145beab70add958f9feef?pvs=4
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
@@ -28,7 +27,7 @@ export default siteConfig({
   // page-specific values will override these site-wide defaults
   defaultPageIcon: null,
   defaultPageCover: null,
-  defaultPageCoverPosition: 0.5,
+  defaultPageCoverPosition: 0.2,
 
   // whether or not to enable support for LQIP preview images (optional)
   isPreviewImageSupportEnabled: true,
@@ -42,24 +41,43 @@ export default siteConfig({
   // any pages defined here will override their default URL paths
   // example:
   //
-  // pageUrlOverrides: {
-  //   '/foo': '067dd719a912471ea9a3ac10710e7fdf',
-  //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
-  // }
-  pageUrlOverrides: null,
+  pageUrlOverrides: {
+    '/projects': '50b47e94d12f4503a925ab3669dc473d',
+    '/research': '3de07e9ce44f4d70af112e75caadf59a',
+    '/blog': '6531ef1388d34fcaa098f496e20b6955',
+    '/about': '51bf2076a7db444b82b7c1eba93f72a6',
+    '/contact': 'd71bc666dfe546b09334ef91fd0ec28b',
+  },
+  // pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-  // ]
+  // navigationStyle: 'default'
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: 'Home',
+      pageId: 'ecbb470232834a82837eaf3427b7bb23'
+    },
+    {
+      title: 'Projects',
+      pageId: '50b47e94d12f4503a925ab3669dc473d'
+    },
+    {
+      title: 'Research',
+      pageId: '3de07e9ce44f4d70af112e75caadf59a'
+    },
+    {
+      title: 'Blog',
+      pageId: '6531ef1388d34fcaa098f496e20b6955'
+    },
+    {
+      title: 'About',
+      pageId: '51bf2076a7db444b82b7c1eba93f72a6'
+    },
+    {
+      title: 'Contact',
+      pageId: 'd71bc666dfe546b09334ef91fd0ec28b'
+    }
+  ]
 })
