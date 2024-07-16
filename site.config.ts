@@ -43,7 +43,6 @@ export default siteConfig({
   //
   pageUrlOverrides: {
     '/projects': '50b47e94d12f4503a925ab3669dc473d',
-    '/research': '3de07e9ce44f4d70af112e75caadf59a',
     '/blog': '6531ef1388d34fcaa098f496e20b6955',
     '/about': '51bf2076a7db444b82b7c1eba93f72a6',
     '/contact': 'd71bc666dfe546b09334ef91fd0ec28b',
@@ -62,10 +61,6 @@ export default siteConfig({
     {
       title: 'Projects',
       pageId: '50b47e94d12f4503a925ab3669dc473d'
-    },
-    {
-      title: 'Research',
-      pageId: '3de07e9ce44f4d70af112e75caadf59a'
     },
     {
       title: 'Blog',
